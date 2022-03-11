@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="cssgra_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.38135552543917E-18 1.39995301592574E-14 0.00865340704835349"
+        rpy="0 0 0" />
+      <mass
+        value="0.104081875675298" />
+      <inertia
+        ixx="9.34114138754385E-05"
+        ixy="3.3881317890172E-20"
+        ixz="-4.84750654577744E-21"
+        iyy="9.34114138754385E-05"
+        iyz="1.32672194581939E-21"
+        izz="0.000180182404564937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.705882352941176 0.705882352941176 0.705882352941176 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.000271681271952353 -0.0150140766790528 -0.0213414598487383"
+        rpy="0 0 0" />
+      <mass
+        value="0.14834901352298" />
+      <inertia
+        ixx="5.50771105643597E-05"
+        ixy="8.81204363357832E-07"
+        ixz="2.95382564559529E-14"
+        iyy="3.39857451221958E-05"
+        iyz="-8.81206909226304E-07"
+        izz="5.50472493095356E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.207843137254902 0.207843137254902 0.207843137254902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0464999999999995"
+      rpy="3.14159265358979 0 1.57079632844264" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.250090421520455 4.99999969142107E-05 0.00353644336773435"
+        rpy="0 0 0" />
+      <mass
+        value="0.122021305147145" />
+      <inertia
+        ixx="1.81887274604454E-05"
+        ixy="-3.57515676032217E-17"
+        ixz="3.82702100995332E-08"
+        iyy="0.00222747645130509"
+        iyz="5.7329358274516E-15"
+        izz="0.00222089842478331" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.0431000000000004"
+      rpy="1.57079632931414 1.5707963267949 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.158329868400325 -0.00538321785599336 0.00016820453911892"
+        rpy="0 0 0" />
+      <mass
+        value="0.194472672385899" />
+      <inertia
+        ixx="5.41049152588267E-05"
+        ixy="-6.08191846183022E-05"
+        ixz="-1.84657750832976E-13"
+        iyy="0.00205938080734716"
+        iyz="-8.81206260386423E-07"
+        izz="0.00207996379707721" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0.5 0 0"
+      rpy="1.57079632990777 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0.0"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.0217585393900934 -0.0150140766805797 0.000169322370938292"
+        rpy="0 0 0" />
+      <mass
+        value="0.148349013530951" />
+      <inertia
+        ixx="5.50472493123864E-05"
+        ixy="8.81204281678862E-07"
+        ixz="-3.16296276202153E-14"
+        iyy="3.39857451244317E-05"
+        iyz="-8.81207102935744E-07"
+        izz="5.50771105692038E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.207843137254902 0.207843137254902 0.207843137254902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0.5 0 -4.99999999685843E-05"
+      rpy="-3.14159265358979 0 3.14159265358978" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="2.29307657008452E-18 1.58386526272459E-18 0.00865340704835363"
+        rpy="0 0 0" />
+      <mass
+        value="0.104081875675299" />
+      <inertia
+        ixx="9.34114138754399E-05"
+        ixy="0"
+        ixz="-7.47125572669488E-21"
+        iyy="9.34114138754399E-05"
+        iyz="-1.32660401302391E-21"
+        izz="0.000180182404564939" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.705882352941176 0.705882352941176 0.705882352941176 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cssgra_description/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="-0.0895999999999999 0 -9.99999999961731E-05"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

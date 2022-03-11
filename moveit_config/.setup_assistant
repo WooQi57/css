@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: cssgra_description
+    relative_path: urdf/cssgra_description.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/cssgra_description.srdf
+  CONFIG:
+    author_name: wuqi
+    author_email: wuqi19@mails.tsinghua.edu.cn
+    generated_timestamp: 1645446309
