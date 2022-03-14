@@ -5,7 +5,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.10472587129384954 0.9938428404588787 0.03617872787110865 0.3161609556223236
-  position 1.43928893978626 0.843164025470573 3.4383393406708267
+  position 0.5999582288902766 0.8987957721605816 1.7565843513130917
 }
 TexturedBackground {
 }
@@ -20,8 +20,7 @@ CssgraDescription {
   name "cssgra"
   controller "ros"
   controllerArgs [
+    "--synchronize"
     "--name=cssgra"
-    "--use-sim-time"
-    "--clock"
   ]
 }

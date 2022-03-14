@@ -113,9 +113,9 @@ int main(int argc, char **argv)
     for (int i = 0; i < NMOTORS; ++i) {
         // velocity初始速度设置为0   
         set_velocity_client = n->serviceClient<webots_ros::set_float>(string("/cssgra/") + string(armNames[i]) + string("/set_velocity"));   
-        set_velocity_srv.request.value = 0.4;   
+        set_velocity_srv.request.value = 1;   // 0.2
         if (set_velocity_client.call(set_velocity_srv) && set_velocity_srv.response.success == 1)     
-            ROS_INFO("Max Velocity set to 0.4 for motor %s.", armNames[i]);   
+            ROS_INFO("Max Velocity set to 1 for motor %s.", armNames[i]);   
         else     
             ROS_ERROR("Failed to call service set_velocity on motor %s.", armNames[i]);
     }
